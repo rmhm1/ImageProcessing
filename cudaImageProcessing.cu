@@ -506,6 +506,8 @@ int main(int argc, char** argv) {
     cudaFree(c_temp), cudaFree(c_blur);
     cudaFree(c_output), cudaFree(c_img);
     cudaFree(c_gx), cudaFree(c_gy);
+	
+    free(grey), free(img);
 
     return 1;
 
